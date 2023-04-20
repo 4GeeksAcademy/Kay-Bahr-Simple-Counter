@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { faClockNine } from "@fortawesome/free-regular-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 
 const Counter = () => {
     const [seconds, setSeconds] = useState(0);
@@ -15,7 +14,7 @@ const Counter = () => {
 
     return (
         <div>
-            <p><FontAwesomeIcon icon={faClockNine} />{seconds}</p>
+            <p>{seconds}</p>
         </div>
     );
 };
