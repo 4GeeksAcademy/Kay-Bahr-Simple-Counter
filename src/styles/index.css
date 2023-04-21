@@ -10,3 +10,9 @@
     import 'relative/path/to/stylesheet.scss';
 
 */
+p {
+    color: white;
+    font-size: 50px;
+    text-align: center;
+
+}
