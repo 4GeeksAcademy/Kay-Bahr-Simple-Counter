@@ -1,3 +1,5 @@
+const macrosConfig = require('./babel-plugin-macros.config.js');
+
 module.exports = function(api) {
   api.cache(true);
   
@@ -16,11 +18,7 @@ module.exports = function(api) {
     [
       "macros",
       {
-        "config": {
-          "fontawesome-svg-core": {
-            "license": "free"
-          }
-        }
+        ...macrosConfig
       }
     ]
   ];
