@@ -1,7 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { icon } from '@fortawesome/fontawesome-svg-core/import.macro';
-
+import { Clock } from 'react-bootstrap-icons';
 
 const Counter = () => {
     const [seconds, setSeconds] = useState(0);
@@ -16,7 +14,7 @@ const Counter = () => {
 
     return (
         <div style={{background: "black"}}>
-            <FontAwesomeIcon icon={icon({name: 'clock-nine', style: 'regular'})} />
+            <Clock />
             <p style={{color: "white"}}>{seconds}</p>
         </div>
     );
